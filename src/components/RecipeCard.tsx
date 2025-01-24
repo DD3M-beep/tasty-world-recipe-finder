@@ -31,6 +31,13 @@ export const RecipeCard = ({ recipe }: RecipeCardProps) => {
             </Badge>
           ))}
         </div>
+        <div className="flex flex-wrap gap-2">
+          {recipe.dietType.map((diet) => (
+            <Badge key={diet} variant="secondary" className="bg-recipe-secondary/10 text-recipe-secondary">
+              {diet}
+            </Badge>
+          ))}
+        </div>
         <div className="flex items-center text-sm text-gray-600">
           <Clock className="w-4 h-4 mr-1" />
           {recipe.prepTime}
