@@ -8,7 +8,7 @@ const Index = () => {
       <header className="bg-gradient-to-b from-recipe-primary/20 to-transparent py-12 px-4">
         <div className="max-w-6xl mx-auto space-y-8">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-recipe-dark">
-            Recettes du Monde
+            Recettes Adaptées
           </h1>
           <p className="text-center text-lg text-recipe-dark/80 max-w-2xl mx-auto">
             Découvrez des recettes authentiques du monde entier, adaptées à vos goûts et à votre culture
