@@ -31,9 +31,14 @@ export const RecipeCard = ({ recipe }: RecipeCardProps) => {
             </Badge>
           ))}
         </div>
-        <div className="flex items-center text-sm text-gray-600">
-          <Clock className="w-4 h-4 mr-1" />
-          {recipe.prepTime}
+        <div className="flex items-center justify-between">
+          <div className="flex items-center text-sm text-gray-600">
+            <Clock className="w-4 h-4 mr-1" />
+            {recipe.prepTime}
+          </div>
+          <Badge variant="outline" className="bg-green-100 text-green-800">
+            {recipe.dietType}
+          </Badge>
         </div>
       </CardContent>
     </Card>
