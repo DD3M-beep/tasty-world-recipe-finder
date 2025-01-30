@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { regions, tastes, dietTypes } from "@/data/recipes";
+import { regions, tastes } from "@/data/recipes";
 
 export const FilterSection = () => {
   return (
@@ -29,21 +29,6 @@ export const FilterSection = () => {
               className="hover:bg-recipe-accent hover:text-white transition-colors"
             >
               {taste}
-            </Button>
-          ))}
-        </div>
-      </div>
-
-      <div className="space-y-2">
-        <h3 className="text-lg font-semibold text-recipe-dark">Type d'alimentation</h3>
-        <div className="flex flex-wrap gap-2">
-          {dietTypes.map((dietType) => (
-            <Button
-              key={dietType}
-              variant="outline"
-              className="hover:bg-recipe-secondary hover:text-white transition-colors"
-            >
-              {dietType}
             </Button>
           ))}
         </div>
